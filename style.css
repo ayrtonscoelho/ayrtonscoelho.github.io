@@ -11,8 +11,10 @@ body, h1,h2,h3,h4,h5,h6 {
 /* Set the width of the sidebar to 120px */
 
 .w3-sidebar {
-    width: 120px;
-    background: #222;}
+    width: 140px;
+		background: #222;
+		padding: 20px;
+	}
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
