@@ -8,44 +8,47 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="favicon.ico"/>
+
+ <!-- Ativa modo responsível -->
 <style>
-
-
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
 
+
+<body class="w3-black">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <img src="my_photo.jpeg" style="width:100%; border-radius: 70%; margin-bottom: 10px;" id="pass">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="pass">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="pass">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="pass">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
 </nav>
 
+
+
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:33% !important">CONTACT</a>
+    <a href="#home" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
+    <a href="#sobre" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
+    <a href="#contato" class="w3-bar-item w3-button" style="width:33% !important">CONTACT</a>
   </div>
 </div>
 
@@ -53,9 +56,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Hi, i'm Ayrton.</h1>
-    <img src="my_photo.jpeg" alt="boy" class="w3-image" width="992" height="1108">
-    <p>DevOps Engineer at Will Bank</p>
+    <h1 class="w3-jumbo titulo-principal"> Hi, i'm Ayrton</h1>
+    <div class="zoom">
+      <img src="my_photo.jpeg" class="img-responsive image-leo">
+      <div class="text-item">
+      </div>
+    </div>
+    <p class="">DevOps Engineer at Will Bank</p>
   </header>
 
   <!-- About Section -->
@@ -75,79 +82,79 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>DevOps Engineer. </p>
     
   </div>
-    
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
-    <h2 class="w3-text-light-grey" style="padding:2px">Academic Graduation🎓</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <ul>
-      <li>Bachelor's degree student in Computer Science at FAESA - University Center, 7th period.</li>
-    </ul>
-  </div>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
-    <h2 class="w3-text-light-grey">Certificates 📚</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <ul>
-      <li><a target="_blank" href="https://www.youracclaim.com/badges/6020abd4-ac8f-4fe6-beb5-0622d5be6842/public_url">AWS Certified Cloud Practitioner (CLF)</a></li>
-    </ul>
-  </div>
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
-    <h2 class="w3-text-light-grey">Skills 🚀</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <li>
-      Amazon Web Services
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
+      <h2 class="w3-text-light-grey">Academic Graduation 🎓</h2>
+      <hr style="width:200px" class="w3-opacity">
       <ul>
-        <li>AWS Networking & Content Delivery services.</li>
-        <li>AWS Application Integration services.</li>
-        <li>AWS Management & Governance services.</li>
-        <li>AWS Container services.</li>
-        <li>AWS Compute services.</li>
-        <li>AWS Developer tools.</li>
-        <li>AWS Security services.</li>
-        <li>AWS Database services.</li>
-        <li>AWS Storage services.</li>
+        <li>Bachelor's degree student in Computer Science at FAESA - University Center, 7th period.</li>
       </ul>
-    </li>
-    <li>AWS-Vault</li>
-    <li>CI/CD Pipelines</li>
-    <li>Docker</li>
-    <li>GIT</li>
-    <li>Linux</li>
-    <li>Terraform</li>
-    <li>MariaDB</li>
-    <li>MySQL</li>
-    <li>New Relic APM</li>
-    <li>PostgreSQL</li>
-    <li>Kong API Gateway</li>
-    <li>Zabbix</li>
-  </div>
+    </div>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
-    <h2 class="w3-text-light-grey">Languages 🌐</h2>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
+      <h2 class="w3-text-light-grey">Licenses and Certificates 📚</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <ul>
+        <li><a target="_blank" href="https://www.youracclaim.com/badges/6020abd4-ac8f-4fe6-beb5-0622d5be6842/public_url">AWS Certified Cloud Practitioner (CLF)</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
+      <h2 class="w3-text-light-grey">Skills 🚀</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <li>
+        Amazon Web Services
+        <ul>
+          <li>AWS Networking & Content Delivery services.</li>
+          <li>AWS Application Integration services.</li>
+          <li>AWS Management & Governance services.</li>
+          <li>AWS Container services.</li>
+          <li>AWS Compute services.</li>
+          <li>AWS Developer tools.</li>
+          <li>AWS Security services.</li>
+          <li>AWS Database services.</li>
+          <li>AWS Storage services.</li>
+        </ul>
+      </li>
+      <li>AWS-Vault</li>
+      <li>CI/CD Pipelines</li>
+      <li>Docker</li>
+      <li>GIT</li>
+      <li>Linux</li>
+      <li>Terraform</li>
+      <li>MariaDB</li>
+      <li>MySQL</li>
+      <li>New Relic APM</li>
+      <li>PostgreSQL</li>
+      <li>Kong API Gateway</li>
+      <li>Zabbix</li>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sobre">
+      <h2 class="w3-text-light-grey">Languages 🌐</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <ul>
+        <li>Advanced technical English.</li>
+      </ul>
+    </div>
+    
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contato">
+    <h2 class="w3-text-light-grey">Contact 📲</h2>
     <hr style="width:200px" class="w3-opacity">
-    <ul>
-      <li>Advanced technical English.</li>
-    </ul>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Vitória, Espírito Santo</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>(27) 99883-3460</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>ayrton.s.coelho@gmail.com</p>
+     <p><a target="_blank" href="https://www.linkedin.com/in/ayrton-senna-72ab5b1a1/" class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"> </a><a target="_blank" href="https://www.linkedin.com/in/ayrton-senna-72ab5b1a1/">Ayrton Senna</a></p>
+    </div><br>
   </div>
-  
-
-<!-- Contact Section -->
-<div class="w3-padding-64 w3-content w3-text-grey" id="contato">
-  <h2 class="w3-text-light-grey">Contact 📲</h2>
-  <hr style="width:200px" class="w3-opacity">
-
-  <div class="w3-section">
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Vitória, Espírito Santo</p>
-    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>(27) 99883-3460</p>
-    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>ayrton.s.coelho@gmail.com</p>
-   <p><a target="_blank" href="https://www.linkedin.com/in/ayrton-senna-72ab5b1a1/" class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"> </a><a target="_blank" href="https://www.linkedin.com/in/ayrton-senna-72ab5b1a1/">Ayrton Senna</a></p>
-  </div><br>
-</div>
-<!-- End Contact Section -->
+  <!-- End Contact Section -->
 <!-- END PAGE CONTENT -->
 </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
